@@ -2,9 +2,10 @@ name: calendar-app
 region: fra
 static_sites:
   - name: calendar
-    git:
-      repo_clone_url: https://github.com/your-username/your-repo.git
+    github:
+      repo: truemanD/calendar-app
       branch: main
+      deploy_on_push: true
     build_command: echo "No build needed"
     output_dir: /
     routes:
