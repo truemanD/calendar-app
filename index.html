@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Календарь</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Календарь</h1>
+        </header>
+        
+        <div class="calendar-wrapper">
+            <div class="calendar-header">
+                <button class="nav-btn" id="prevMonth">‹</button>
+                <h2 id="currentMonthYear"></h2>
+                <button class="nav-btn" id="nextMonth">›</button>
+            </div>
+            
+            <div class="calendar-grid" id="calendarGrid">
+                <!-- Календарь будет сгенерирован через JavaScript -->
+            </div>
+            
+            <div class="today-btn-wrapper">
+                <button class="today-btn" id="todayBtn">Сегодня</button>
+            </div>
+        </div>
+        
+        <div class="events-panel" id="eventsPanel">
+            <h3>События на <span id="selectedDate"></span></h3>
+            <div class="events-list" id="eventsList"></div>
+            <div class="add-event-form">
+                <input type="text" id="eventInput" placeholder="Добавить событие...">
+                <button id="addEventBtn">Добавить</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

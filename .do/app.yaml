@@ -1,0 +1,12 @@
+name: calendar-app
+region: fra
+static_sites:
+  - name: calendar
+    git:
+      repo_clone_url: https://github.com/your-username/your-repo.git
+      branch: main
+    build_command: echo "No build needed"
+    output_dir: /
+    routes:
+      - path: /
+    catchall_document: index.html
