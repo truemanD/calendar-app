@@ -40,7 +40,7 @@ SSH_KEY_ID=$(doctl compute ssh-key list --format ID,Name,PublicKey --no-header |
 
 if [ -z "$SSH_KEY_ID" ]; then
     echo "🔑 Добавление SSH ключа в DigitalOcean..."
-    SSH_KEY_ID=$(doctl compute ssh-key create vpn-ssh-key --public-key-file "${SSH_KEY_PATH}.pub" --format ID --no-header)
+    SSH_KEY_ID=$(doctl compute ssh-key create vpn-ssh-key --public-key "$PUBLIC_KEY" --format ID --no-header)
     echo "✅ SSH ключ создан: $SSH_KEY_ID"
 else
     echo "✅ SSH ключ уже существует: $SSH_KEY_ID"
