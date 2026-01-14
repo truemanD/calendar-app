@@ -1,0 +1,7 @@
+{
+  "droplet_id": 544323102,
+  "ip": "206.189.52.73",
+  "name": "openvpn-server",
+  "region": "fra1",
+  "size": "s-1vcpu-1gb"
+}
